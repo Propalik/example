@@ -46,6 +46,7 @@ export class Modal {
     closeOnBackdropClick(event) {
         const isClickedOnBackdrop = event.target === this.modal;
         if (isClickedOnBackdrop) {
+            // eslint-disable-next-line no-unused-expressions
             this.isFormChanged() ? this.confirmCloseModal() : this.close();
         }
     }
@@ -58,7 +59,7 @@ export class Modal {
             "input, select, textarea",
         );
         const values = {};
-        formElements.forEach((element) => {
+        formElements.forEach( element => {
             values[element.name] = element.value;
         });
         return values;
@@ -88,7 +89,7 @@ export class Modal {
         const errorFieldsToClear = this.modal.querySelectorAll(".input-error");
 
         if (formElementsToClear) {
-            formElementsToClear.forEach((element) => {
+            formElementsToClear.forEach( element => {
                 element.value = ""; // Очищаем значение элемента формы
 
                 if (element.tagName === "SELECT") {
@@ -98,7 +99,7 @@ export class Modal {
         }
 
         if (errorFieldsToClear) {
-            errorFieldsToClear.forEach((errorField) => {
+            errorFieldsToClear.forEach( errorField => {
                 errorField.textContent = ""; // Очищаем текст ошибок
             });
         }
@@ -135,6 +136,7 @@ export class Modal {
     confirmCloseModal() {
         const confirmationMessage =
             "Данные были изменены. Действительно хотите закрыть модальное окно?";
+        // eslint-disable-next-line no-alert
         const isConfirmed = confirm(confirmationMessage);
         if (isConfirmed) {
             this.close();

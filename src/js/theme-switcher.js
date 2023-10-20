@@ -60,11 +60,11 @@ function switchMedia(scheme) {
         darkMedia = scheme === "dark" ? "all" : "not all";
     }
 
-    [...lightStyles].forEach((link) => {
+    [ ...lightStyles ].forEach( link => {
         link.media = lightMedia;
     });
 
-    [...darkStyles].forEach((link) => {
+    [ ...darkStyles ].forEach( link => {
         link.media = darkMedia;
     });
 }

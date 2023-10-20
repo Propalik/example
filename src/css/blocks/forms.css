@@ -5,19 +5,6 @@
     width: 100%;
 }
 
-/* display: flex;
-min-height: var(--base-size-md);
-width: 100%;
-flex-direction: row;
-box-sizing: border-box;
-align-items: center;
-overflow: hidden;
-border: 1px solid var(--grey-base);
-border-radius: var(--border-radius);
-position: relative;
-transition: border 0.3s ease-in-out;
-background: var(--background-color); */
-
 label {
     display: inline-block;
     height: auto;
@@ -58,12 +45,12 @@ textarea {
     text-overflow: ellipsis;
     margin-bottom: 0.4rem;
     overflow-x: hidden;
-    /* max-width: 27rem; */
     outline: none;
 }
 
 textarea {
     white-space: break-spaces;
+    resize: none;
 }
 
 input[type="number"] {
@@ -80,10 +67,6 @@ input[type="number"] {
     text-overflow: ellipsis;
     overflow-x: hidden;
     white-space: nowrap;
-}
-
-textarea {
-    resize: none;
 }
 
 input[type="text"]::placeholder,
@@ -132,20 +115,6 @@ textarea:disabled {
     user-select: none;
     pointer-events: none;
 }
-
-/* input:disabled label::before {
-    content: attr(data-label-text);
-    color: red;
-} */
-
-/* input[type="text"]:invalid,
-input[type="tel"]:invalid,
-input[type="password"]:invalid,
-input[type="email"]:invalid {
-    background-color: #fef8f6;
-    border-color: #c13515;
-    outline: none;
-} */
 
 /* switcher */
 .switcher {
