@@ -1,6 +1,5 @@
 /* переопределение стилей bootstrap */
 
-
 .navbar-nav {
     width: 24rem;
 
@@ -33,3 +32,11 @@
         flex-direction: row;
     }
 } */
+
+.Rectangle-box {
+    padding-top: 4rem;
+    padding-bottom: 2.4rem;
+    border-radius: 10px;
+    background-color: #75bf7a;
+    margin-top: 4rem;
+}
