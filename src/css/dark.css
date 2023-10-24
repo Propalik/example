@@ -154,5 +154,5 @@ dialog::backdrop {
 }
 
 .skeleton::before {
-    --skeleton-gradient: (90deg, #353535, #6f6f6f, #353535);
+    --skeleton-gradient: linear-gradient(90deg, #353535, #6f6f6f, #353535);
 }
