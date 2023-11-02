@@ -85,8 +85,9 @@ const renderData = () => {
 
     swiperWrapper.appendChild(div) // Вставка сформированной дивки в swiperWrapper
   })
-  initTasksSwiper() // Вызов функции для инициализации слайдера
 }
+
+initTasksSwiper() // Вызов функции для инициализации слайдера
 
 function displayTasksDetails() {
   const taskUrlId = window.location.search.split('=')[1] // извлекаем id из адресной строки
@@ -160,6 +161,8 @@ function initTasksSwiper() {
     spaceBetween: 30,
   })
 }
+
+initTasksSwiper() // Вызов функции для инициализации слайдера
 
 /* Слайдер tasks-details */
 function initTasksDetailsSwiper() {
