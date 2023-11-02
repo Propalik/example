@@ -92,7 +92,6 @@
     stroke-width: 1.4;
     vertical-align: middle;
     position: absolute;
-    z-index: 1;
 
     /* перекрытие кликабельной ссылки на карточке */
     z-index: 1;
@@ -198,7 +197,10 @@
     max-height: 100%;
 }
 
-/* pagination dynamic cards */
+/* swiper */
+.dynamic .swiper-pagination-bullet-active {
+    --swiper-theme-color: #0f62fe;
+}
 
 /* skeleton */
 .skeleton {
