@@ -1,13 +1,13 @@
 /* banner */
 /* stylelint-disable-next-line selector-max-id */
 #banner {
-    background-image: url("/src/img/banner-1.avif");
+    background-image: url("../../images/banner-1.avif");
     min-height: 50rem;
     height: 100%;
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 8rem 0 2em 0;
+    padding: 8rem 0 2em;
 }
 
 .banner-description {
@@ -22,14 +22,14 @@
     font-size: 6rem;
     margin-bottom: 2.4rem;
     color: #ffffff;
-    text-shadow: 0 0 0.62rem rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 0.62rem rgb(0 0 0 / 50%);
 }
 
 .banner-subtitle {
     font-size: 1.6rem;
     margin-bottom: 3.2rem;
     color: #ffffff;
-    text-shadow: 0 0 0.62rem rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 0.62rem rgb(0 0 0 / 50%);
 }
 
 /* swiper-slider  */
@@ -37,6 +37,7 @@
 .swiper-button-next {
     --swiper-navigation-size: 2rem; /* перебивка css переменных swiper слайдера */
     --swiper-navigation-color: #ffffff;
+
     background-color: transparent;
     color: #ffffff;
     width: 4rem;
@@ -51,7 +52,8 @@
 }
 
 .swiper-button-next,
-.swiper-rtl .swiper-button-prev {
+.swiper-rtl,
+.swiper-button-prev {
     --swiper-navigation-sides-offset: 0;
 }
 
@@ -62,6 +64,7 @@
 
 .swiper-pagination-bullet {
     --swiper-pagination-bullet-inactive-color: #000000;
+
     -swiper-pagination-bullet-inactive-opacity: 1;
 }
 
@@ -88,6 +91,7 @@
     .swiper-button-prev,
     .swiper-button-next {
         --swiper-navigation-size: 1.8rem;
+
         margin-top: 4rem;
     }
 }

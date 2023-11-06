@@ -1,8 +1,10 @@
 :root {
     /* общий фон */
     --body-color: #ffffff;
+
     /* цвет заголовков */
     --title-color: #161616;
+
     /* цвет подзаголовков */
     --subtitle-color: #42526b;
 
@@ -41,7 +43,7 @@
 
     /* Focus */
     --focus-focus: #0f62fe;
-    --focus-box-shadow: 0px 0px 0px 0.1rem #ffffff inset;
+    --focus-box-shadow: 0 0 0 0.1rem #ffffff inset;
 
     /* table */
     --white: #ffffff;
@@ -64,6 +66,13 @@
     --accent-3: #de7699;
     --accent-4: #e6c3ce;
     --accent-5: #fff2f7;
+
+    /* cards */
+    --cards-grey-500: #525252;
+
+
+    /* cards background */
+    --cards-bgc: #f4f4f4;
 }
 
 /* logo */
@@ -144,5 +153,9 @@ dialog {
 }
 
 dialog::backdrop {
-    --modal-overlay: rgba(22, 22, 22, 0.5); /* оверлей */
+    --modal-overlay: rgb(22 22 22 / 50%); /* оверлей */
+}
+
+.skeleton::before {
+    --skeleton-gradient: linear-gradient(90deg, #eeeeee, #f9f9f9, #eeeeee);
 }

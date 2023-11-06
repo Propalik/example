@@ -135,6 +135,7 @@ textarea:disabled {
         --background: #8d8d8d;
         --disabled: #c6c6c6;
         --disabled-inner: #c6c6c6;
+
         appearance: none;
         height: 21px;
         outline: none;
@@ -143,12 +144,8 @@ textarea:disabled {
         position: relative;
         margin: 0;
         cursor: pointer;
-
         background: var(--b, var(--background));
-        transition:
-            background 0.3s,
-            border-color 0.3s,
-            box-shadow 0.2s;
+        transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
     }
 
     .switch::after {
@@ -157,9 +154,7 @@ textarea:disabled {
         left: 0;
         top: 0;
         position: absolute;
-        transition:
-            transform var(--d-t, 0.3s) var(--d-t-e, ease),
-            opacity var(--d-o, 0.2s);
+        transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s);
     }
 
     .switch:checked {
@@ -172,6 +167,7 @@ textarea:disabled {
 
     .switch:disabled {
         --b: var(--disabled);
+
         cursor: not-allowed;
         opacity: 0.9;
     }

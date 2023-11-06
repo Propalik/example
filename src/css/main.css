@@ -19,6 +19,7 @@ body {
 
 img,
 svg {
+    max-width: 100%;
     display: block; /* убираем зазор снизу */
 }
 
@@ -35,12 +36,6 @@ p {
     margin: 0 auto;
     box-sizing: border-box;
     padding: 0 1.6rem;
-}
-
-
-.table1 {
-    margin-top: 6rem;
-    border: 2px dashed var(--neutral-1);
 }
 
 /* атомарные классы */
